@@ -1,0 +1,54 @@
+<!-- 文档类型声明标签，告知浏览器这个页面采取html版本来显示页面 -->
+<!DOCTYPE html>
+<!-- 告诉浏览器这是一个英文网站，本页面采取英文显示，单也可以书写中文 -->
+<html lang="en">
+
+<head>
+    <!-- 必须书写，告知浏览器以UTF-8编码表编解码中文，如果不书写就会乱码 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 标题标签 -->
+    <title>title</title>
+</head>
+
+<body>
+    <!--引入图片-->
+    <!--
+        1.使用img标签引入图片，常见属性：
+            1）src：表示引入图片的路径   
+                1. .. 在这里表示当前页面demo01.html的上一级目录即父目录即 02-图片音频和视频
+                2. ../img/a.jpg 表示先找到当前页面的父目录02-图片音频和视频，然后在查找同目录的img目录，最后
+                    找到img目录下面的a.jpg文件
+            2）px在前端中表示单位，像素，单位还可以使用百分比表示，相对于页面 。
+                表示占页面50%
+            3)alt:表示如果图片加载失败会显示内容
+    -->
+    <img src="../img/a.jpg" height="300px" width="20%" alt="heyun116">
+
+    <hr>
+    <!--
+        2.音频 audio标签
+            controls="controls" 属性表示音频的播放控件，必须书写
+
+
+        这个例子包含了多个 <source> 元素。如果能够播放的话，浏览器就会试图去加载第一个 source 元素；
+        如果不行，那就退而求其次去加载第二个。
+        <audio controls>
+            <source src="/audios/sound1" type="audio/mpeg"/>
+            <source src="/audios/sound2" type="audio/mpeg"/>
+        </audio>
+    -->
+    
+    <audio controls>
+        <source src="../audio/b.mp3"  >
+        <source src="../audio/a.mp3"  >
+    </audio>
+    <!--
+        视频：video
+    -->
+    <hr>
+    <video src="../video/c.mp4" controls height="500px" width="600px"></video>
+</body>
+
+</html>

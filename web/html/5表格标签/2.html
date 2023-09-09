@@ -1,0 +1,47 @@
+<!-- 文档类型声明标签，告知浏览器这个页面采取html版本来显示页面 -->
+<!DOCTYPE html>
+<!-- 告诉浏览器这是一个英文网站，本页面采取英文显示，单也可以书写中文 -->
+<html lang="en">
+
+<head>
+    <!-- 必须书写，告知浏览器以UTF-8编码表编解码中文，如果不书写就会乱码 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 标题标签 -->
+    <title>title</title>
+</head>
+
+<body>
+    <!--
+      需求1: 实现跨行,制作电话本
+      分析：
+        案例表示实现4行2列表格
+        张三位于第一列和第二和三行级跨2行
+    -->
+    <table border="1px" cellspacing="0px" width="50%">
+        <tr>
+            <td>姓名</td>
+            <td>手机号</td>
+        </tr>
+        <!--张三需要占两行-->
+        <tr>
+            <!--
+                rowspan='2'属于td或者th的属性 2表示跨两行
+            -->
+            <td rowspan="2">张三</td>
+            <td>13824230077</td>
+        </tr>
+        <tr>
+            <!-- <td>张三</td> -->
+            <td>13800001234</td>
+        </tr>
+        <tr>
+            <td>李四</td>
+            <td>179345312345</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

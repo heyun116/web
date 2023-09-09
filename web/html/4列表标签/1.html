@@ -1,0 +1,105 @@
+<!-- 文档类型声明标签，告知浏览器这个页面采取html版本来显示页面 -->
+<!DOCTYPE html>
+<!-- 告诉浏览器这是一个英文网站，本页面采取英文显示，单也可以书写中文 -->
+<html lang="en">
+
+<head>
+    <!-- 必须书写，告知浏览器以UTF-8编码表编解码中文，如果不书写就会乱码 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 标题标签 -->
+    <title>title</title>
+</head>
+
+<body>
+    <!--  
+      1.有序列表标签 ol 
+        
+      2.ol和ul以及li标签上都具有一个type属性，表示当前列表类型
+        说明：
+          1）一般将type属性书写在ol或者ul上面，那么所有的子标签li就会都起到作用，如果只作用li标签
+            那么只是针对某个li标签
+          2)在有序列表标签ol中，type属性值如下：
+            1 默认值
+            a
+            A
+            i
+            I
+      3.ol>li*3 按tab或者回车快速生成标签 3表示生成3个li标签
+
+    <dl>、<dt>与<dd>标签
+    HTML <dl> 元素 （或 HTML 描述列表元素）是一个包含术语定义以及描述的列表，通常用于展示词汇表或者元数据 (键 - 值对列表)。
+    
+    <dl>
+        <dt>Name</dt>
+        <dd>Godzilla</dd>
+        <dt>Born</dt>
+        <dd>1952</dd>
+        <dt>Birthplace</dt>
+        <dd>Japan</dd>
+        <dt>Color</dt>
+        <dd>Green</dd>
+        <dd>Orange</dd>
+    </dl>
+    -->
+    <ol type="1">
+        <li>咖啡</li>
+        <li>茶</li>
+        <li>牛奶</li>
+    </ol>
+    <ol type="a">
+        <li>咖啡</li>
+        <li>茶</li>
+        <li>牛奶</li>
+    </ol>
+    <ol type="A">
+        <li>咖啡</li>
+        <li>茶</li>
+        <li>牛奶</li>
+    </ol>
+    <ol type="I">
+        <li>咖啡</li>
+        <li>茶</li>
+        <li>牛奶</li>
+    </ol>
+    <ol type="i">
+        <li>咖啡</li>
+        <li>茶</li>
+        <li>牛奶</li>
+    </ol>
+    <hr>
+    <!--
+      无序列表：ul
+        type属性值：
+          1)circle 空心圆
+          2)disc:实心圆，默认值
+          3)square:实心方形
+    -->
+    <ul>
+        <li>hd</li>
+        <li>zzuli</li>
+        <li>zzu</li>
+    </ul>
+
+    <ul type="circle">
+        <li>hd</li>
+        <li>zzuli</li>
+        <li>zzu</li>
+    </ul>
+
+    <ul type="disc">
+        <li>hd</li>
+        <li>zzuli</li>
+        <li>zzu</li>
+    </ul>
+
+    <ul type="square">
+        <li>hd</li>
+        <li>zzuli</li>
+        <li>zzu</li>
+    </ul>
+
+</body>
+
+</html>

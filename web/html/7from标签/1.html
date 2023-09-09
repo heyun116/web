@@ -1,0 +1,57 @@
+<!-- 文档类型声明标签，告知浏览器这个页面采取html版本来显示页面 -->
+<!DOCTYPE html>
+<!-- 告诉浏览器这是一个英文网站，本页面采取英文显示，单也可以书写中文 -->
+<html lang="en">
+
+<head>
+    <!-- 必须书写，告知浏览器以UTF-8编码表编解码中文，如果不书写就会乱码 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 标题标签 -->
+    <title>title</title>
+</head>
+
+<body>
+    <!--
+      1.form表单标签
+      2.如果想将表单中的数据提交到后台服务器，必须将输入的内容放到form标签文本中
+      3.action="#" : action的属性值书写提交数据的服务器地址，例如：http://www.baidu.com,这里我们还没有学习后台服务器
+      先书写#
+      4.method="get"表示提交数据到后台的方式，常见方式：
+          1）get 默认值
+            特点：
+              1.请求数据书写在url后面
+                  http://www.baidu.com?username=锁哥&password=1234&.....
+              2.不安全
+              3.不能携带大的数据，不同浏览器限制大小不一致，不能携带字节数据
+          2）post
+            特点：
+              1.请求数据不书写在url后面
+                 http://www.baidu.com
+              2.安全
+              3.能携带大的数据，携带字节和字符数据
+        注意：get请求效率高，post效率低
+
+        <select>与<option>标签
+        HTML <select> 元素表示一个提供选项菜单的控件。 
+
+        name: 名称
+        id: 唯一ID
+        maxlength：最大长度
+        minlength：最小长度
+        required：是否必填
+        placeholder：当表单控件为空时，控件中显示的内容
+
+        <button>标签
+        HTML <button> 元素表示一个可点击的按钮，可以用在表单或文档其它需要使用简单标准按钮的地方。 默认情况下，HTML 按钮的显示样式接近于 user agent 所在的宿主系统平台（用户操作系统）的按钮， 但你可以使用
+        CSS 来改变按钮的样貌。
+     
+    -->
+    <form action="#" method="get">
+        <!-- 提交到后台的数据 -->
+    </form>
+
+</body>
+
+</html>

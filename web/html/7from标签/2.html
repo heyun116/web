@@ -1,0 +1,51 @@
+<!-- 文档类型声明标签，告知浏览器这个页面采取html版本来显示页面 -->
+<!DOCTYPE html>
+<!-- 告诉浏览器这是一个英文网站，本页面采取英文显示，单也可以书写中文 -->
+<html lang="en">
+
+<head>
+    <!-- 必须书写，告知浏览器以UTF-8编码表编解码中文，如果不书写就会乱码 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 标题标签 -->
+    <title>title</title>
+</head>
+
+<body>
+    <!--
+      input输入项
+        1.<input type="text"> 表示普通文本，默认的
+        2.<input type="password"> 密码框，自动对输入的内容进行加密
+        3.<input type="radio" name="sex"> 男 <input type="radio" name="sex"> 女  
+            说明：对于单选按钮radio来说如果想实现单选，那么必须给input标签一个name属性，并且属性值一致
+        4. <input type="checkbox"> 篮球 <input type="checkbox"> 足球  复选框或者多选框
+        5. <input type="file"> 上传的文件
+        6.<input type="hidden" value="918181iauaioO"> 隐藏域，就是页面不需要给用户展示，但是后台需要数据，此时可以使用隐藏域
+            说明：对于input标签,后台获取的值都是input标签的value值，像text password等都是默认具有value属性，属性值是输入框输入的内容
+        7.<input type="submit" value="登录"> 提交整个表单的数据到后台
+
+        补充： 
+            1.如果单选按钮和复选框被选中，那么需要给input标签加checked属性
+            2.placeholder="邮箱/手机号/用户名" 表示输入框的提示信息
+
+    -->
+    <form action="#">
+        用户名: <input type="text" placeholder="邮箱/用户名"> <br> <input> <br>
+        密码: <input type="password"> <br>
+        性别:
+        <input type="radio" name="sex" > 男 <input type="radio" name="sex"> 女
+        <br>
+        爱好:
+        <input type="checkbox" > 篮球 <input type="checkbox"> 足球
+        <br>
+        您上传的种子文件是: <input type="file">
+        <br>
+        <input type="hidden" value="918181iauaioO">
+        <br>
+        <input type="submit" value="登录">
+        <input type="reset" value="重置">
+    </form>
+</body>
+
+</html>

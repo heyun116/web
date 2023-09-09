@@ -1,0 +1,70 @@
+<!-- 文档类型声明标签，告知浏览器这个页面采取html版本来显示页面 -->
+<!DOCTYPE html>
+<!-- 告诉浏览器这是一个英文网站，本页面采取英文显示，单也可以书写中文 -->
+<html lang="en">
+
+<head>
+    <!-- 必须书写，告知浏览器以UTF-8编码表编解码中文，如果不书写就会乱码 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 标题标签 -->
+    <title>Title</title>
+</head>
+
+<body>
+    <!--
+        &lt;	<	小于号或显示标记
+    &gt;	>	大于号或显示标记
+    &amp;	&	可用于显示其它特殊字符
+    &quot;	“	引号
+    &reg;	®	已注册
+    &copy;	©	版权
+    &trade;	™	商标
+    &nbsp;		不断行的空白
+        1.字体标签：font
+        2.font标签常见属性：
+            1）color ：表示字体颜色，颜色值有两种设置方式：
+                I:使用英文单词
+                II:使用十六进制：R(RED)G(GREEN)B(BLUE)
+                    #RGB==>#000000  每一组有两个数字，数字范围是0-F
+                    举例：
+                        红色：#FF0000
+                        蓝色：#0000FF
+                注意：如果每两组的数字是一致的那么每组只需要书写一个数字即可：例如：红色：#FF0000==简写：#F00
+            2)size:字体大小
+                属性值，数字大小是1-7，依次递增，如果超过7按照7显示，小于1按照1显示，单位px表示像素，在html中px单位可以不加，建议加
+            3)face:字体样式 
+                样式值：宋体 黑体 楷体。。。
+    -->
+    <font color="green">heyun116</font>
+    <font color="#FF0000">heyun116</font>
+    <font color="#0000FF">heyun116</font>
+    <font color="#F00" size="7px" face="楷体">heyun116</font>
+    <font color="#F00" size="700px" face="宋体">heyun116</font>
+    <font color="#F00" size="1px">heyun116</font>
+    <font color="#F00" size="-10px">heyun116</font>
+    <!--
+        3.i标签：倾斜
+        4.b标签：加粗
+    -->
+    <i>我是倾斜的</i>
+    <b>我是加粗的</b>
+    <u>我是下划线</u>
+    <b><i>我倾斜+加粗</i></b>
+    <b><i><u>我倾斜+加粗+下划线</u></i></b>
+    <!--5.水平线:hr-->
+
+    <hr/>
+
+    <!--
+        6.br标签：换行 换行内容之间没有空白
+    -->
+    heyun<br>116
+    <!-- 
+        7.center表示文本居中标签
+    -->
+    <center>我是居中的</center>
+</body>
+
+</html>

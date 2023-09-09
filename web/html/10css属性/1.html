@@ -1,0 +1,48 @@
+<!-- 文档类型声明标签，告知浏览器这个页面采取html版本来显示页面 -->
+<!DOCTYPE html>
+<!-- 告诉浏览器这是一个英文网站，本页面采取英文显示，单也可以书写中文 -->
+<html lang="en">
+
+<head>
+    <!-- 必须书写，告知浏览器以UTF-8编码表编解码中文，如果不书写就会乱码 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 标题标签 -->
+    <title>title</title>
+</head>
+
+<body>
+    <!-- 
+        1.border 表示边框
+            1)border-style: solid 边框的样式是实线
+            2)border-width: 2px; 边框宽度
+            3)border-color:blueviolet 边框颜色
+        2.border:5px solid red; 表示边框的宽度是5px 实线 颜色是红色
+        3.background-color: 背景颜色
+     -->
+
+    <div style="border-style: dashed;border-width: 2px;border-color: red;">div1</div>
+    <div style="border: 5px dashed gold;background-color: burlywood;">div2</div>
+    <!--
+      css的属性：display,属性值如下：
+        none	此元素不会被显示。
+        block	此元素将显示为块级元素，此元素前后会带有换行符。将行内标签变为块级标签
+        inline	默认。此元素会被显示为内联元素，元素前后没有换行符。将块级标签变为行内标签
+    -->
+    <div style="border: 5px dashed gold;background-color: burlywood;">div3</div>
+
+    <!-- 
+        span属于行内标签：共处一行
+        display: block;表示将当前行内标签span转换为块级标签
+     -->
+    <span style="display: block;">heyun</span>
+    <!-- 
+         display: inline; 表示将块级标签div转换为行内标签
+      -->
+      <div style="display: inline;">div5</div>
+    <div style="display: inline;">div6</div>
+
+</body>
+
+</html>

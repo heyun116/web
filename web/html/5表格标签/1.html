@@ -1,0 +1,81 @@
+<!-- 文档类型声明标签，告知浏览器这个页面采取html版本来显示页面 -->
+<!DOCTYPE html>
+<!-- 告诉浏览器这是一个英文网站，本页面采取英文显示，单也可以书写中文 -->
+<html lang="en">
+
+<head>
+    <!-- 必须书写，告知浏览器以UTF-8编码表编解码中文，如果不书写就会乱码 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 标题标签 -->
+    <title>title</title>
+</head>
+
+<table>
+    <!--
+      1.表格标签：table
+      2.table标签的子标签：
+        1）行标签：tr
+        2) 列标签：td th
+            注意：th表示表格标题标签，自动加粗和居中显示
+      3.border="1px" 表示表格边框
+      4.cellspacing="0px" 表示表格单元格之间的距离是0，即没有距离
+      5.width="50%" 表示表格标签的宽度占页面的50%
+      6.tr的属性：align="center"，值center表示居中 left 靠左 right 靠右
+
+      分析：
+        案例需要实现4行(tr)4列(td th(表头))
+        table>tr*4>td*4 按回车或者tab自动生成标签
+
+
+    <thead>标签
+        HTML的<thead>元素定义了一组定义表格的列头的行。
+    <tbody>标签
+        HTML的<tbody>元素定义一组数据行。
+    <caption>标签
+        HTML <caption> 元素 (or HTML 表格标题元素) 展示一个表格的标题， 它常常作为 <table> 的第一个子元素出现，同时显示在表格内容的最前面，但是，它同样可以被 CSS
+                样式化，所以，它同样可以出现在相对于表格的任意位置。
+
+    -->
+     <table border="1px" cellspacing="0px" width="50%">
+        <!--第一行-->
+        <tr>
+            <!--第一列-->
+            <th>序号</th>
+            <!--第二列-->
+            <th>品牌</th>
+            <!--第三列-->
+            <th>品牌名称</th>
+            <!--第四列-->
+            <th>企业名称</th>
+        </tr align="center">
+        <!--第二行-->
+        <tr align="center">
+            <td>010</td>
+            <td>
+                <img src="../img/三只松鼠.jpg" height="40px" width="40px">
+            </td>
+            <td>三只松鼠</td>
+            <td>三只松鼠</td>
+        </tr>
+        <!--第三行-->
+        <tr align="center">
+            <td>009</td>
+            <td>
+                <img src="../img/蜜雪冰城.jpg" height="40px" width="40px">
+            </td>
+            <td>蜜雪冰城</td>
+            <td>蜜雪冰城</td>
+        </tr>
+        <!--第四行-->
+        <tr align="center">
+            <td>008</td>
+            <td><img src="../img/小米.jpg" height="40px" width="40px"></td>
+            <td>小米</td>
+            <td>小米科技有限公司</td>
+        </tr>
+    
+</body>
+
+</html>
